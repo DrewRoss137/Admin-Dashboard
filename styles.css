@@ -74,10 +74,27 @@ body {
   padding: 16px;
 }
 
-.icons {
+a img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   filter: invert(100%);
   height: 40%;
   width: 40%;
+}
+
+.home,
+.profile,
+.messages,
+.history,
+.tasks,
+.communities,
+.settings,
+.support,
+.privacy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
@@ -91,7 +108,7 @@ a {
 
 .navigation {
   display: grid;
-  gap: 32px;
+  gap: 0px;
   grid-auto-flow: dense;
   text-align: center;
 }
