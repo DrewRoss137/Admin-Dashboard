@@ -27,8 +27,7 @@ html,
 .sidebar-header,
 .sidebar-header-container,
 .sidebar-navigation-container,
-.sidebar-navigation,
-footer {
+.sidebar-navigation {
   justify-content: center;
 }
 
@@ -105,6 +104,11 @@ a {
 
 .sidebar-header {
   align-items: flex-start;
+  transition: all 1s ease;
+}
+
+.sidebar-header:hover {
+  transform: scale(1.03);
 }
 
 .dashboard-icon {
@@ -123,15 +127,22 @@ a {
   text-shadow: 0px 3px 3px rgba(0, 0, 0, 1);
 }
 
-.sidebar-header-text,
-.navigation-icon,
-.navigation-text {
+.sidebar-header,
+a {
   cursor: pointer;
 }
 
 .sidebar-header-text,
 .navigation-text {
   font-weight: 900;
+}
+
+a:not(.github-logo) {
+  transition: all 0.75s ease;
+}
+
+a:not(.github-logo):hover {
+  transform: scale(1.05);
 }
 
 .navigation-icon {
@@ -141,6 +152,10 @@ a {
 
 .navigation-text {
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
+}
+
+.content {
+  flex: 1;
 }
 
 footer {
