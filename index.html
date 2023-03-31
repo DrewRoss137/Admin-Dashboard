@@ -15,95 +15,96 @@
     <title>Admin Dashboard</title>
   </head>
   <body class="body" id="body">
-    <div class="sidebar" id="sidebar">
-      <h1 class="sidebar-header-text" id="sidebar-header-text">Dashboard</h1>
-      <nav class="navigation" id="navigation">
-        <a class="home" id="home" title="Home">
-          <img
-          alt="Home Icon"
-          class="home-icon icons"
-          id="home-icon"
-          src="home.svg"
-          />
-          <span class="home-text" id="home-text">Home</span>
-        </a>
-        <a class="profile" id="profile" title="Profile">
-          <img
-          alt="Profile Icon"
-          class="profile-icon icons"
-          id="profile-icon"
-          src="profile.svg"
-          />
-          <span class="profile-text" id="profile-text">Profile</span>
-        </a>
-        <a class="messages" id="messages" title="messages">
-          <img
-          alt="Messages Icon"
-          class="messages-icon icons"
-          id="messages-icon"
-          src="messages.svg"
-          />
-          <span class="messages-text" id="messages-text">Messages</span>
-        </a>
-        <a class="history" id="history" title="history">
-          <img
-          alt="History Icon"
-          class="history-icon icons"
-          id="history-icon"
-          src="history.svg"
-          />
-          <span class="history-text" id="history-text">History</span>
-        </a>
-        <a class="tasks" id="tasks" title="tasks">
-          <img
-          alt="Tasks Icon"
-          class="tasks-icon icons"
-          id="tasks-icon"
-          src="tasks.svg"
-          />
-          <span class="tasks-text" id="tasks-text">Tasks</span>
-        </a>
-        <a class="communities" id="communities" title="communities">
-          <img
-          alt="Communities Icon"
-          class="communities-icon icons"
-          id="communities-icon"
-          src="communities.svg"
-          />
-          <span class="communities-text" id="communities-text"
-            >Communities</span
-          >
-        </a>
-        <a class="settings" id="settings" title="settings">
-          <img
-          alt="Settings Icon"
-          class="settings-icon icons"
-          id="settings-icon"
-          src="settings.svg"
-          />
-          <span class="settings-text" id="settings-text">Settings</span>
-        </a>
-        <a class="support" id="support" title="support">
-          <img
-          alt="Support Icon"
-          class="support-icon icons"
-          id="support-icon"
-          src="support.svg"
-          />
-          <span class="support-text" id="support-text">Support</span>
-        </a>
-        <a class="privacy" id="privacy" title="privacy">
-          <img
-          alt="Privacy Icon"
-          class="privacy-icon icons"
-          id="privacy-icon"
-          src="privacy.svg"
-          />
-          <span class="privacy-text" id="privacy-text">Privacy</span>
-        </a>
-      </nav>
-    </div>
     <main class="main" id="main">
+      <div class="sidebar" id="sidebar">
+        <header class="sidebar-header" id="sidebar-header">
+          <div class="sidebar-header-container" id="sidebar-header-container">
+            <img
+              alt="Dashboard Icon"
+              class="dashboard-icon"
+              id="dashboard-icon"
+              src="dashboard.svg"
+            />
+            <h1 class="sidebar-header-text" id="sidebar-header-text">
+              Dashboard
+            </h1>
+          </div>
+        </header>
+        <div
+          class="sidebar-navigation-container"
+          id="sidebar-navigation-container"
+        >
+          <nav class="sidebar-navigation" id="sidebar-navigation">
+            <a class="home" id="home">
+              <img class="navigation-icon" id="home-icon" src="home.svg" />
+              <span class="navigation-text" id="home-text">Home</span>
+            </a>
+            <a class="profile" id="profile">
+              <img
+                class="navigation-icon"
+                id="profile-icon"
+                src="profile.svg"
+              />
+              <span class="navigation-text" id="profile-text">Profile</span>
+            </a>
+            <a class="messages" id="messages">
+              <img
+                class="navigation-icon"
+                id="messages-icon"
+                src="messages.svg"
+              />
+              <span class="navigation-text" id="messages-text">Messages</span>
+            </a>
+            <a class="history" id="history">
+              <img
+                class="navigation-icon"
+                id="history-icon"
+                src="history.svg"
+              />
+              <span class="navigation-text" id="history-text">History</span>
+            </a>
+            <a class="tasks" id="tasks">
+              <img class="navigation-icon" id="tasks-icon" src="tasks.svg" />
+              <span class="navigation-text" id="tasks-text">Tasks</span>
+            </a>
+            <a class="communities" id="communities">
+              <img
+                class="navigation-icon"
+                id="communities-icon"
+                src="communities.svg"
+              />
+              <span class="navigation-text" id="communities-text"
+                >Communities</span
+              >
+            </a>
+            <a class="settings" id="settings">
+              <img
+                class="navigation-icon"
+                id="settings-icon"
+                src="settings.svg"
+              />
+              <span class="navigation-text" id="settings-text">Settings</span>
+            </a>
+            <a class="support" id="support">
+              <img
+                class="navigation-icon"
+                id="support-icon"
+                src="support.svg"
+              />
+              <span class="navigation-text" id="support-text">Support</span>
+            </a>
+            <a class="privacy" id="privacy">
+              <img
+                class="navigation-icon"
+                id="privacy-icon"
+                src="privacy.svg"
+              />
+              <span class="navigation-text" id="privacy-text">Privacy</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+      <div class="content" id="content"></div>
       <footer class="footer" id="footer">
         <a
           class="github-logo"
