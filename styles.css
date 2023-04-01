@@ -1,5 +1,4 @@
 html {
-  color: rgba(255, 255, 255, 1);
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
@@ -54,40 +53,37 @@ main,
 html,
 body,
 footer,
-main {
+main,
+.content-header {
   width: 100%;
 }
 
 body {
+  background-attachment: fixed;
   background-image: radial-gradient(
     circle at center,
-    rgba(30, 58, 138, 1),
-    rgba(0, 8, 20, 1)
+    rgba(53, 79, 82, 1),
+    rgba(47, 62, 70, 1)
   );
 }
 
 body,
-.sidebar {
-  background-attachment: fixed;
+.sidebar,
+.content-header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .sidebar {
-  background-image: radial-gradient(
-    circle at center,
-    rgba(0, 53, 102, 1),
-    rgba(30, 58, 138, 1)
-  );
   border-bottom: none;
   border-left: none;
   border-right-color: rgba(0, 0, 0, 1);
   border-right-style: solid;
   border-right-width: 1px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
-  padding: 12px;
-  width: 12%;
+  color: rgba(202, 210, 197, 1);
+  padding: 16px;
+  width: 200px;
 }
 
 .sidebar,
@@ -100,6 +96,17 @@ a {
 .sidebar,
 .sidebar-navigation {
   flex-direction: column;
+}
+
+.sidebar,
+.content-header {
+  background-image: radial-gradient(
+    circle at center,
+    rgba(82, 121, 111, 1),
+    rgba(53, 79, 82, 1)
+  );
+  border-top: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
 }
 
 .dashboard-icon,
@@ -119,9 +126,9 @@ a {
 }
 
 .dashboard-icon,
-.navigation-icon,
-.github-logo {
-  filter: invert(100%);
+.navigation-icon {
+  filter: invert(92%) sepia(10%) saturate(188%) hue-rotate(53deg)
+    brightness(90%) contrast(91%);
 }
 
 .sidebar-header-text {
@@ -163,6 +170,17 @@ a {
   flex: 1;
 }
 
+.content-header {
+  border-bottom-color: rgba(0, 0, 0, 1);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgba(0, 0, 0, 1);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right: none;
+  height: 137px;
+}
+
 footer {
   bottom: 0;
   left: 0;
@@ -181,9 +199,9 @@ footer {
 }
 
 .colours {
-  color: rgba(0, 8, 20, 1);
-  color: rgba(0, 29, 61, 1);
-  color: rgba(0, 53, 102, 1);
-  color: rgba(255, 195, 0, 1);
-  color: rgba(255, 214, 10, 1);
+  color: rgba(202, 210, 197, 1);
+  color: rgba(132, 169, 140, 1);
+  color: rgba(82, 121, 111, 1);
+  color: rgba(53, 79, 82, 1);
+  color: rgba(47, 62, 70, 1);
 }
