@@ -30,11 +30,11 @@
             </h1>
           </div>
         </header>
-        <div
-          class="sidebar-navigation-container"
-          id="sidebar-navigation-container"
-        >
-          <nav class="sidebar-navigation" id="sidebar-navigation">
+        <div class="sidebar-navigation" id="sidebar-navigation">
+          <nav
+            class="sidebar-navigation-container"
+            id="sidebar-navigation-container"
+          >
             <a class="home" id="home">
               <img class="navigation-icon" id="home-icon" src="home.svg" />
               <span class="navigation-text" id="home-text">Home</span>
@@ -107,27 +107,31 @@
       <div class="content" id="content">
         <header class="content-header" id="content-header">
           <div class="upper" id="upper">
-            <img class="header-icon" id="search-icon" src="search.svg" />
-            <input
-              class="search"
-              id="search"
-              placeholder="Search"
-              type="text"
-            />
-            <img
-              class="header-icon"
-              id="notification-icon"
-              src="notification.svg"
-            />
-            <img
-              class="profile-picture"
-              id="profile-picture"
-              src="profile-picture.gif"
-            />
-            <span class="profile-name" id="profile-name">Drew Ross</span>
-            <div class="profile" id="profile"></div>
+            <div class="search" id="search">
+              <img class="header-icon" id="search-icon" src="search.svg" />
+              <input
+                class="search-input"
+                id="search-input"
+                placeholder="Search"
+                type="text"
+              />
+            </div>
+            <div class="profile" id="profile">
+              <img
+                class="header-icon"
+                id="notification-icon"
+                src="notification.svg"
+              />
+              <img
+                class="profile-picture"
+                id="profile-picture"
+                src="profile-picture.gif"
+              />
+              <span class="profile-name" id="profile-name">Drew Ross</span>
+              <div class="profile" id="profile"></div>
+            </div>
           </div>
-          <div class="lower" id="upper">
+          <div class="lower" id="lower">
             <div class="greeting" id="greeting">
               <img
                 class="greeting-profile-picture"
