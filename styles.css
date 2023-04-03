@@ -15,9 +15,12 @@ a,
 .header-profile,
 .lower,
 .greeting,
+.the-odin-project,
 .header-buttons,
+.projects-and-panels,
+.projects-and-panels-container,
 .projects,
-.projects-container,
+.panels,
 footer {
   display: flex;
 }
@@ -29,8 +32,8 @@ a,
 .search,
 .header-profile,
 .greeting,
+.the-odin-project,
 .header-buttons,
-.projects,
 footer {
   align-items: center;
 }
@@ -39,7 +42,8 @@ html,
 .sidebar-header-container,
 .sidebar-navigation,
 .upper,
-.lower {
+.lower,
+.projects-and-panels-container {
   justify-content: center;
 }
 
@@ -87,7 +91,8 @@ body,
 .sidebar,
 .content-header,
 .content-header-buttons,
-.project {
+.project,
+.panel {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -122,7 +127,7 @@ a,
 
 .sidebar,
 .search-input,
-.projects {
+.projects-and-panels {
   padding: 16px;
 }
 
@@ -139,7 +144,10 @@ a,
 
 .sidebar,
 .sidebar-navigation-container,
-.content-header {
+.content-header,
+.the-odin-project,
+.projects-and-panels,
+.panels {
   flex-direction: column;
 }
 
@@ -163,6 +171,7 @@ a,
 .profile-name,
 .greeting-profile-picture,
 .greeting-profile-name,
+.the-odin-project-logo,
 button {
   cursor: pointer;
 }
@@ -186,9 +195,10 @@ button {
 }
 
 .sidebar-header-text,
-.greeting-profile-name {
+.greeting-profile-name,
+.the-odin-project-header-text {
   font-size: 28px;
-  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 1);
 }
 
 .sidebar-header-text,
@@ -224,7 +234,7 @@ button {
 
 .navigation-text,
 .profile-name {
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
 }
 
 .content,
@@ -256,7 +266,7 @@ button {
 .search-input {
   background-color: transparent;
   border-radius: 50px;
-  box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 1);
   width: 1300px;
 }
 
@@ -307,21 +317,28 @@ button {
   font-size: 20px;
 }
 
+.the-odin-project {
+  text-align: center;
+  padding-top: 8px;
+}
+
+.the-odin-project-logo {
+  height: 44px;
+  width: 60px;
+}
+
 .content-header-buttons {
   border-radius: 20px;
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 1);
   height: 30px;
   text-align: center;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
   width: 120px;
 }
 
-.projects {
-  flex-direction: column;
-}
-
+.projects-and-panels,
 .projects,
-.projects-container {
+.panels {
   gap: 16px;
 }
 
@@ -330,20 +347,35 @@ button {
   text-shadow: 0px 3px 3px rgba(0, 0, 0, 1);
 }
 
-.projects-container {
+.projects {
   flex-wrap: wrap;
 }
 
 .project {
-  border-radius: 10px;
-  height: 400px;
-  width: 550px;
+  height: 500px;
+  width: 600px;
   box-shadow: inset 2px 0px 0px rgba(202, 210, 197, 1),
     inset 4px 0px 0px rgba(132, 169, 140, 1),
     inset 6px 0px 0px rgba(82, 121, 111, 1),
     inset -2px 0px 0px rgba(202, 210, 197, 1),
     inset -4px 0px 0px rgba(132, 169, 140, 1),
     inset -6px 0px 0px rgba(82, 121, 111, 1), 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.project,
+.panel {
+  border-radius: 10px;
+}
+
+.panel {
+  background-image: radial-gradient(
+    circle at center,
+    rgba(202, 210, 197, 1),
+    rgba(132, 169, 140, 1)
+  );
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  height: 758px;
+  width: 409px;
 }
 
 footer {
