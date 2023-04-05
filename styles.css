@@ -101,7 +101,7 @@ body {
 body,
 .sidebar,
 .content-header,
-.content-header-buttons,
+button,
 .project,
 .panel {
   background-position: center;
@@ -122,16 +122,25 @@ body,
 .sidebar,
 .sidebar-header-container,
 .sidebar-navigation-container,
-a,
+.home,
+.profile,
+.messages,
+.history,
+.tasks,
+.communities,
+.settings,
+.support,
+.privacy,
 .header-profile,
 .header-buttons {
   gap: 12px;
 }
 
 .sidebar,
+a,
 .content-header,
 .search-input,
-.content-header-buttons,
+button,
 .project-header-text,
 .project-header-title-text {
   color: rgba(202, 210, 197, 1);
@@ -145,7 +154,7 @@ a,
 
 .sidebar,
 .content-header,
-.content-header-buttons,
+button,
 .project,
 .panel {
   background-image: radial-gradient(
@@ -170,6 +179,15 @@ a,
 .content-header {
   border-top: none;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+}
+
+.sidebar-header {
+  transition: transform 1s ease;
+}
+
+.sidebar-header:hover,
+.header-icon:hover {
+  transform: scale(1.03);
 }
 
 .dashboard-icon {
@@ -205,12 +223,6 @@ button {
 .dashboard-icon,
 .sidebar-header-text {
   align-items: flex-start;
-  transition: all 1s ease;
-}
-
-.dashboard-icon:hover,
-.sidebar-header-text:hover {
-  transform: scale(1.03);
 }
 
 .sidebar-header-text,
@@ -222,11 +234,10 @@ button {
 }
 
 .sidebar-header-text,
-.navigation-text,
+a,
 .profile-name,
 .greeting-profile-name,
-.content-header-buttons,
-.project-header-title-text {
+button {
   font-weight: 900;
 }
 
@@ -234,7 +245,7 @@ button {
 .content-header,
 .search-input,
 .search-input::placeholder,
-.content-header-buttons,
+button,
 .project-header-title-text {
   font-size: 16px;
 }
@@ -247,20 +258,27 @@ button {
   height: 24px;
 }
 
-.navigation-icon,
-.navigation-text {
-  transition: all 0.5s ease;
-}
-
-.navigation-icon:hover,
-.navigation-text:hover {
-  transform: scale(1.05);
-}
-
 .navigation-text,
 .profile-name,
 .project-header-title-text {
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
+}
+
+a,
+.header-icon,
+button {
+  text-decoration: none;
+  transition: color 0.3s ease, transform 1s ease;
+}
+
+a:not(.github-logo):not(.the-odin-project-header-text):not(
+    .project-header-title-text:hover
+  ):hover,
+.the-odin-project-header-text:hover,
+button:hover,
+.project-header-title-text:hover {
+  color: rgba(132, 169, 140, 1);
+  transform: scale(1.03);
 }
 
 .content,
@@ -276,6 +294,7 @@ button {
   border-left-style: solid;
   border-left-width: 1px;
   border-right: none;
+  padding: 8px;
 }
 
 .content-header,
@@ -285,14 +304,9 @@ button {
   gap: 8px;
 }
 
-.content-header,
-.project {
-  padding: 8px;
-}
-
 .header-icon {
-  height: 36px;
-  width: 36px;
+  height: 32px;
+  width: 32px;
 }
 
 .search-input {
@@ -312,7 +326,7 @@ button {
 }
 
 .search-input,
-.content-header-buttons {
+button {
   border: none;
   outline: none;
 }
@@ -349,13 +363,14 @@ button {
   font-size: 20px;
 }
 
-.the-odin-project {
-  padding-top: 8px;
+.the-odin-project,
+button {
+  text-align: center;
 }
 
 .the-odin-project,
-.content-header-buttons {
-  text-align: center;
+.project {
+  padding-top: 8px;
 }
 
 .the-odin-project-logo {
@@ -363,14 +378,19 @@ button {
   width: 60px;
 }
 
-.content-header-buttons {
+.the-odin-project-header-text:hover,
+.project-header-title-text:hover {
+  color: rgba(227, 180, 100, 1);
+}
+
+button {
   border-radius: 20px;
   height: 30px;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
   width: 120px;
 }
 
-.content-header-buttons,
+button,
 .project-screenshot {
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
 }
@@ -407,8 +427,9 @@ button {
   width: 30px;
 }
 
-.project-header-text {
+.project-header {
   align-self: flex-start;
+  padding-left: 8px;
 }
 
 .project-screenshot {
@@ -430,9 +451,10 @@ footer {
 
 .the-odin-project-logo-button {
   width: 17.6px;
-  margin-right: -2px;
+  margin-right: -4.5px;
 }
-.the-odin-project-logo-button .live-demo-button {
+.the-odin-project-logo-button,
+.live-demo-button {
   width: 24px;
 }
 
@@ -443,8 +465,8 @@ footer {
 
 .panel {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-  height: 662px;
-  width: 409px;
+  height: 651px;
+  width: 452px;
 }
 
 footer {
