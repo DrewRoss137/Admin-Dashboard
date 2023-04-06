@@ -24,6 +24,9 @@ a,
 .project-screenshot-container,
 .project-buttons,
 .panels,
+.panel,
+.panel-header,
+.panel-links-container,
 footer {
   display: flex;
 }
@@ -39,6 +42,7 @@ a,
 .header-buttons,
 .project-header,
 .project-buttons,
+.panel-links-container,
 footer {
   align-items: center;
 }
@@ -49,7 +53,9 @@ html,
 .upper,
 .lower,
 .projects-and-panels-container,
-.project-screenshot-container {
+.project-screenshot-container,
+.panels,
+.panel-links-container {
   justify-content: center;
 }
 
@@ -58,6 +64,7 @@ body,
 main,
 .content,
 .content-header,
+.underline,
 footer {
   width: 100%;
 }
@@ -171,7 +178,9 @@ button,
 .projects-and-panels,
 .project,
 .project-screenshot-container,
-.panels {
+.panels,
+.panel,
+.panel-links-container {
   flex-direction: column;
 }
 
@@ -237,7 +246,8 @@ button {
 a,
 .profile-name,
 .greeting-profile-name,
-button {
+button,
+.panel-header-text {
   font-weight: 900;
 }
 
@@ -260,23 +270,34 @@ button,
 
 .navigation-text,
 .profile-name,
-.project-header-title-text {
+.project-header-title-text,
+.panel-header-text,
+.panel-links {
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
 }
 
-a,
-.header-icon,
-button {
+a {
   text-decoration: none;
+}
+
+.navigation-text,
+.header-icon,
+.profile-name,
+.greeting-profile-name,
+.the-odin-project-header-text,
+button,
+.project-header-title-text,
+.panel-header-text,
+.panel-links {
   transition: color 0.3s ease, transform 1s ease;
 }
 
-a:not(.github-logo):not(.the-odin-project-header-text):not(
-    .project-header-title-text:hover
-  ):hover,
+.navigation-text:hover,
+.profile-name:hover,
+.greeting-profile-name:hover,
 .the-odin-project-header-text:hover,
 button:hover,
-.project-header-title-text:hover {
+.panel-links:hover {
   color: rgba(132, 169, 140, 1);
   transform: scale(1.03);
 }
@@ -288,20 +309,29 @@ button:hover,
 
 .content-header {
   border-bottom-color: rgba(0, 0, 0, 1);
-  border-bottom-style: solid;
   border-bottom-width: 1px;
   border-left-color: rgba(0, 0, 0, 1);
   border-left-style: solid;
   border-left-width: 1px;
   border-right: none;
-  padding: 8px;
 }
 
 .content-header,
 .greeting,
 .project,
-.project-screenshot-container {
+.project-screenshot-container,
+.panel {
   gap: 8px;
+}
+
+.content-header,
+.panel-header-text {
+  padding: 8px;
+}
+
+.content-header,
+.underline {
+  border-bottom-style: solid;
 }
 
 .header-icon {
@@ -364,7 +394,8 @@ button {
 }
 
 .the-odin-project,
-button {
+button,
+.panel-links-container {
   text-align: center;
 }
 
@@ -379,7 +410,9 @@ button {
 }
 
 .the-odin-project-header-text:hover,
-.project-header-title-text:hover {
+.project-header-title-text:hover,
+.panel-header-text:hover,
+.panel-links:hover {
   color: rgba(227, 180, 100, 1);
 }
 
@@ -398,7 +431,8 @@ button,
 .projects-and-panels,
 .projects-and-panels-container,
 .projects,
-.panels {
+.panels,
+.panel-links-container {
   gap: 16px;
 }
 
@@ -413,8 +447,8 @@ button,
     inset -2px 0px 0px rgba(202, 210, 197, 1),
     inset -4px 0px 0px rgba(132, 169, 140, 1),
     inset -6px 0px 0px rgba(82, 121, 111, 1), 0px 4px 4px rgba(0, 0, 0, 0.5);
-  height: 420px;
-  width: 580px;
+  height: 466px;
+  width: 640px;
 }
 
 .project,
@@ -435,8 +469,8 @@ button,
 .project-screenshot {
   align-self: center;
   border-radius: 15px;
-  height: 352px;
-  width: 550px;
+  height: 390.72px;
+  width: 610.5px;
 }
 
 .project-buttons {
@@ -447,6 +481,13 @@ button,
 .project-buttons,
 footer {
   justify-content: flex-end;
+}
+
+.the-odin-project-logo-button,
+.live-demo-button,
+.github-logo-button {
+  filter: brightness(0) saturate(100%) invert(46%) sepia(7%) saturate(1435%)
+    hue-rotate(114deg) brightness(91%) contrast(86%);
 }
 
 .the-odin-project-logo-button {
@@ -465,8 +506,14 @@ footer {
 
 .panel {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-  height: 651px;
-  width: 452px;
+  height: 590px;
+  padding: 16px;
+  width: 300px;
+}
+
+.underline {
+  border-bottom-color: rgba(47, 62, 70, 1);
+  border-bottom-width: 2px;
 }
 
 footer {
