@@ -195,7 +195,13 @@ button,
 }
 
 .sidebar-header:hover,
-.header-icon:hover {
+.header-icon:hover,
+.navigation-text:hover,
+.profile-name:hover,
+.greeting-profile-name:hover,
+.the-odin-project-header-text:hover,
+button:hover,
+.panel-links:hover {
   transform: scale(1.03);
 }
 
@@ -299,7 +305,6 @@ button,
 button:hover,
 .panel-links:hover {
   color: rgba(132, 169, 140, 1);
-  transform: scale(1.03);
 }
 
 .content,
