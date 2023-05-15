@@ -2,6 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.projects-and-panels-container {
+  align-items: center;
+  justify-content: center;
+}
+
 html,
 main,
 .sidebar,
@@ -40,6 +45,7 @@ a,
 .greeting,
 .the-odin-project,
 .header-buttons,
+.projects-and-panels-container,
 .project-header,
 .project-buttons,
 .panel-links-container,
