@@ -505,13 +505,15 @@ footer {
   width: 17.6px;
   margin-right: -4.5px;
 }
+
 .the-odin-project-logo-button,
-.live-demo-button {
+.live-demo-button,
+.github {
   width: 24px;
 }
 
-.github-logo-button,
-.github-logo {
+.github-container,
+.github {
   width: 24.5px;
 }
 
@@ -533,12 +535,14 @@ footer {
   position: fixed;
 }
 
-.github-logo {
-  opacity: 7.5%;
-  padding-bottom: 6px;
+.github {
+  fill: rgba(255, 255, 255, 1);
+  opacity: 7%;
+  padding-bottom: 3px;
   padding-left: 0px;
-  padding-right: 6px;
+  padding-right: 3px;
   padding-top: 0px;
+  width: 24px;
 }
 
 .colours {
